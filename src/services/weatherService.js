@@ -1,5 +1,5 @@
-// const apiUrl = "https://weather-backend-j0q9.onrender.com/";
-const apiUrl = "http://localhost:8080/";
+const apiUrl = "https://weather-backend-codibly.onrender.com/";
+// const apiUrl = "http://localhost:8080/";
 
 const getWeatherForecast = async (latitude, longitude) => {
   try {
