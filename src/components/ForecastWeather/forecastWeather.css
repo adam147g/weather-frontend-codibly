@@ -1,0 +1,85 @@
+.forecast-container {
+  margin: 20px;
+  border: 3px solid var(--border-color); 
+  border-radius: 15px;
+  background-color: var(--background-color);
+}
+
+body.light-mode {
+  --background-color: var(--background-color-light);
+  --cell-background-color: var(--cell-background-color-light);
+  --text-color: var(--text-color-light);
+  --border-color: var(--border-color-light);
+  --header-color: var(--header-color-light);
+  --header-shadow: var(--header-shadow-light);
+  --temperature-color: var(--temperature-color-light);
+  --energy-color: var(--energy-color-light);
+  --cell-shadow: var(--cell-shadow-light);
+}
+
+body.dark-mode {
+  --background-color: var(--background-color-dark);
+  --cell-background-color: var(--cell-background-color-dark);
+  --text-color: var(--text-color-dark);
+  --border-color: var(--border-color-dark);
+  --header-color: var(--header-color-dark);
+  --header-shadow: var(--header-shadow-dark);
+  --temperature-color: var(--temperature-color-dark);
+  --energy-color: var(--energy-color-dark);
+  --cell-shadow: var(--cell-shadow-dark);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--header-color);
+  text-shadow: 0px 0px 10px var(--header-shadow);
+  font-size: 30px;
+}
+
+.forecast-table {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  justify-content: center;
+}
+
+.forecast-table .forecast-cell {
+  width: 190px; 
+  box-sizing: border-box; 
+  padding: 5px;
+  border: 3px solid var(--border-color); 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: var(--cell-shadow);
+  background-color: var(--cell-background-color);
+}
+
+.forecast-table .date {
+  font-size: 1.2em;
+  color: var(--text-color);
+  font-weight: 700;
+  margin: 6px;
+}
+
+.forecast-cell .icon span {
+  font-size: 50px;
+}
+
+.forecast-table .temperature {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--temperature-color);
+}
+
+.forecast-table .energy {
+  color: var(--energy-color);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
